@@ -322,8 +322,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
               Center(
                 child: TextButton(
                   onPressed: () {
-                    // Navigator.pop: kembali ke halaman sebelumnya (Login)
-                    Navigator.pop(context);
+                    // Navigator.pushReplacementNamed: ganti halaman Register dengan Login
+                    Navigator.pushReplacementNamed(context, '/login');
                   },
                   child: RichText(
                     text: TextSpan(
